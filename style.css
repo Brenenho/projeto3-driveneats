@@ -1,0 +1,139 @@
+.main {
+    width: 414px;
+    height: 1026px;
+    background-color: #EEEEEE;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menusuperior {
+    width: 414px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+
+    background: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;   
+    flex-direction: column;
+    padding-left: 21px;
+    box-sizing: border-box;
+
+    margin-bottom: 40px;
+}
+
+.titulo {
+    width: 248px;
+    height: 44px;
+
+
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+
+    color: #FFFFFF;
+}
+
+.subtitulo {
+
+    width: 226px;
+    height: 17px;
+
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.conteudo {
+    height: 842px;
+    width: 414px;
+    padding-top: 92px;
+    background-color: #EEEEEE;
+    margin-top: 31px;
+    
+}
+
+.prato {
+    height: 258px;
+    width: 414px;
+    margin-bottom: 27px;
+    background-color: #CF2B2B;
+}
+
+.tituloprato {
+    padding-left: 19px;
+    width: 250px;
+    height: 25px;
+
+
+font-family: 'Righteous';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0.018em;
+
+color: #333333;
+
+}
+
+.bebida {
+    height: 258px;
+    width: 414px;
+    margin-bottom: 27px;
+    background-color: #CF2B2B;
+}
+
+.sobremesa {
+    height: 258px;
+    width: 414px;
+    margin-bottom: 27px;
+    background-color: #CF2B2B;
+}
+
+.menuinferior {
+    height: 92px;
+    width: 414px;
+    background-color: #FFFFFF;
+}
+
+.botaomeio {
+    width: 364px;
+height: 61px;
+box-sizing: border-box;
+width: 364px;
+height: 53px;
+padding-left: 70px;
+padding-right: 70px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.018em;
+
+color: #FFFFFF;
+
+background: #CBCBCB;
+border-radius: 50px;
+}
+
+.textobotao {
+    margin: 0 17px;
+}
