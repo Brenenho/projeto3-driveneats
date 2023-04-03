@@ -22,7 +22,7 @@
                 <div class="titulocont">Primeiro, seu prato</div> 
                 <div class="row">
                     <div class="menupedido">
-                        <div class="opcoes pratos">
+                        <div class="opcoes pratos1" onclick="selecionarpedidop('.pratos1')">
                             <div class="contenderopcoes">
                                 <img src="./imagens/frango_yin_yang.png" alt="">
                                 <div class="nomepedido">Frango Yin Yang</div>
@@ -30,7 +30,7 @@
                                 <div class="preco">R$ 14,90</div>
                             </div>
                         </div>
-                        <div class="opcoes pratos">
+                        <div class="opcoes pratos2" onclick="selecionarpedidop('.pratos2')">
                             <div class="contenderopcoes">
                                 <img src="./imagens/frango_yin_yang.png" alt="">
                                 <div class="nomepedido">Frango Yin Yang</div>
@@ -38,7 +38,7 @@
                                 <div class="preco">R$ 14,90</div>
                             </div>
                         </div>
-                        <div class="opcoes pratos">
+                        <div class="opcoes pratos3" onclick="selecionarpedidop('.pratos3')">
                             <div class="contenderopcoes">
                                 <img src="./imagens/frango_yin_yang.png" alt="">
                                 <div class="nomepedido">Frango Yin Yang</div>
@@ -46,7 +46,7 @@
                                 <div class="preco">R$ 14,90</div>
                             </div>
                         </div>
-                        <div class="opcoes">
+                        <div class="opcoes pratos4" onclick="selecionarpedidop('.pratos4')">
                             <div class="contenderopcoes">
                                 <img src="./imagens/frango_yin_yang.png" alt="">
                                 <div class="nomepedido">Frango Yin Yang</div>
@@ -60,8 +60,8 @@
             <div class="bebida">
                 <div class="titulocont">Agora, sua bebida</div>
                 <div class="row">
-                    <div class="menupedido">
-                        <div class="opcoes2">
+                    <div class="menupedido bebidas">
+                        <div class="opcoes2 bebida1" onclick="selecionarpedidob('.bebida1')">
                             <div class="contenderopcoes">
                                 <img src="./imagens/coca-cola.png" alt="">
                                 <div class="nomepedido">Coquinha gelada</div>
@@ -69,7 +69,7 @@
                                 <div class="preco2">R$ 4,90</div>
                             </div>
                         </div>
-                        <div class="opcoes2">
+                        <div class="opcoes2 bebida2" onclick="selecionarpedidob('.bebida2')">
                             <div class="contenderopcoes">
                                 <img src="./imagens/coca-cola.png" alt="">
                                 <div class="nomepedido">Coquinha gelada</div>
@@ -77,7 +77,7 @@
                                 <div class="preco2">R$ 4,90</div>
                             </div>
                         </div>
-                        <div class="opcoes2">
+                        <div class="opcoes2 bebida3" onclick="selecionarpedidob('.bebida3')">
                             <div class="contenderopcoes">
                                 <img src="./imagens/coca-cola.png" alt="">
                                 <div class="nomepedido">Coquinha gelada</div>
@@ -85,7 +85,7 @@
                                 <div class="preco2">R$ 4,90</div>
                             </div>
                         </div>
-                        <div class="opcoes2">
+                        <div class="opcoes2 bebida4" onclick="selecionarpedidob('.bebida4')">
                             <div class="contenderopcoes">
                                 <img src="./imagens/coca-cola.png" alt="">
                                 <div class="nomepedido">Coquinha gelada</div>
@@ -99,8 +99,8 @@
             <div class="sobremesa">
                 <div class="titulocont">Por fim, sua sobremesa</div>
                 <div class="row">
-                    <div class="menupedido">
-                            <div class="opcoes3">
+                    <div class="menupedido sobremesas">
+                            <div class="opcoes3 sobre1" onclick="selecionarpedidos('.sobre1')">
                                 <div class="contenderopcoes">
                                     <img src="./imagens/pudim.png" alt="">
                                     <div class="nomepedido">Pudim</div>
@@ -108,7 +108,7 @@
                                     <div class="preco2">R$ 4,90</div>
                                 </div>
                             </div>
-                            <div class="opcoes3">
+                            <div class="opcoes3 sobre2" onclick="selecionarpedidos('.sobre2')" >
                                 <div class="contenderopcoes">
                                     <img src="./imagens/pudim.png" alt="">
                                     <div class="nomepedido">Pudim</div>
@@ -116,7 +116,7 @@
                                     <div class="preco2">R$ 4,90</div>
                                 </div>
                             </div>
-                            <div class="opcoes3">
+                            <div class="opcoes3 sobre3" onclick="selecionarpedidos('.sobre3')">
                                 <div class="contenderopcoes">
                                     <img src="./imagens/pudim.png" alt="">
                                     <div class="nomepedido">Pudim</div>
@@ -124,7 +124,7 @@
                                     <div class="preco2">R$ 4,90</div>
                                 </div>
                             </div>
-                            <div class="opcoes3">
+                            <div class="opcoes3 sobre4" onclick="selecionarpedidos('.sobre4')">
                                 <div class="contenderopcoes">
                                     <img src="./imagens/pudim.png" alt="">
                                     <div class="nomepedido">Pudim</div>
@@ -137,11 +137,12 @@
             </div>
         </div>
         <div class="menuinferior centralizar">
-            <div class="botaomeio centralizar">
+            <button class="botaomeio centralizar" disabled>
                 <div class="textobotao">Selecione os 3 itens para fechar o pedido</div>
                 
-            </div>
+            </button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

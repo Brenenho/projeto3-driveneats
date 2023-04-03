@@ -95,6 +95,30 @@ body {
 
 }
 
+.selecionado {
+    border-radius: 9px;
+    border-width: 5px;
+    border-color: green;
+    border-style: solid;
+    box-sizing: border-box;
+
+}
+
+.avancar {
+    background-color: #32B72F;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.018em;
+
+color: #FFFFFF;
+}
+
 .row {
     width: 100%;
     height: auto;
@@ -133,6 +157,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .opcoes2 {
@@ -280,13 +305,14 @@ color: #000000;
 }
 
 .botaomeio {
-    width: 364px;
+width: 364px;
 height: 61px;
 box-sizing: border-box;
 width: 364px;
 height: 53px;
 padding-left: 70px;
 padding-right: 70px;
+border: none;
 
 font-family: 'Roboto';
 font-style: normal;
