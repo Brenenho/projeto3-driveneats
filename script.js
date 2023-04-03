@@ -9,7 +9,7 @@ function verificaselecao() {
   if (nomecomida !== "") {
     if (nomebebida !== "") {
       if (nomesobremesa !== "") {
-        const botaoselecionado = document.querySelector('.menuinferior')
+        const botaoselecionado = document.querySelector('.botaomeio')
 
         botaoselecionado.classList.add('avancar')
         
@@ -31,8 +31,11 @@ if (botaoanterior !== null) {
     const selecionado = document.querySelector(seletor);
     selecionado.classList.add("selecionado");
 
-   
-  nomecomida = nomepedido.innerHTML
+    
+  nomecomida = document.querySelector(seletor)
+  
+  verificaselecao();
+  
   console.log(nomecomida)
    
 
@@ -49,7 +52,7 @@ if (botaoanterior !== null) {
     const selecionado = document.querySelector(seletor);
     selecionado.classList.add("selecionado");
 
-    nomebebida = seletor.innerHTML
+    nomebebida = document.querySelector(seletor)
 
     verificaselecao();
 }
@@ -65,7 +68,7 @@ if (botaoanterior !== null) {
     const selecionado = document.querySelector(seletor);
     selecionado.classList.add("selecionado");
 
-    nomesobrememsa = seletor.innerHTML
+    nomesobrememsa = document.querySelector(seletor)
 
     verificaselecao();
 }
