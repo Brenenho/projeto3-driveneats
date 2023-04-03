@@ -9,7 +9,7 @@ function verificaselecao() {
   if (nomecomida !== "") {
     if (nomebebida !== "") {
       if (nomesobremesa !== "") {
-        const botaoselecionado = document.querySelector('.botaomeio')
+        let botaoselecionado = document.querySelector('.botaomeio')
 
         botaoselecionado.classList.add('avancar')
         
