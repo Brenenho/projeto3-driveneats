@@ -101,11 +101,14 @@ body {
     border-color: green;
     border-style: solid;
     box-sizing: border-box;
+    
 
 }
 
-.avancar {
+.botaomeio.avancar {
+    
     background-color: #32B72F;
+    border: none;
     
 }
 
@@ -189,7 +192,37 @@ body {
     border-radius: 4px;
 }
 
-.nomepedido {
+.nomeprato  {
+    width: 139px;
+    height: 23px;
+    margin-top: 8px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+
+color: #333333;
+}
+
+.nomebebida  {
+    width: 139px;
+    height: 23px;
+    margin-top: 8px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+
+color: #333333;
+}
+
+.nomesobremesa  {
     width: 139px;
     height: 23px;
     margin-top: 8px;
@@ -296,14 +329,12 @@ color: #000000;
 
 .botaomeio {
 width: 364px;
-height: 61px;
-box-sizing: border-box;
-width: 364px;
 height: 53px;
+box-sizing: border-box;
+border: none;
 padding-left: 70px;
 padding-right: 70px;
-border: none;
-
+background-color:grey;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -314,10 +345,9 @@ letter-spacing: 0.018em;
 
 color: #FFFFFF;
 
-background-color: #CBCBCB;
 border-radius: 50px;
 }
 
-.textobotao {
-    margin: 0 17px;
+.botaomeio button {
+    border: none;
 }

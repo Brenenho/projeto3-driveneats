@@ -1,26 +1,27 @@
-let nomebebida = "";
+let nomecomida = ""
 
-let nomecomida = "";
+let nomebebida = ""
 
-let nomesobremesa = "";
+let nomesobremesa = ""
 
 
 function verificaselecao() {
   if (nomecomida !== "") {
     if (nomebebida !== "") {
       if (nomesobremesa !== "") {
-        let botaoselecionado = document.querySelector('.botaomeio')
-
-        botaoselecionado.classList.add('avancar')
-        
+        const botaoFinalizar = document.querySelector('.botaomeio');
+                botaoFinalizar.classList.add('avancar');               
+                botaoFinalizar.innerHTML = 'Fechar Pedido';
+                botaoFinalizar.removeAttribute('disabled');
+        }
       }
     }
   }
-}
 
 
 
-function selecionarpedidop(seletor) {
+
+function selecionarpedidop(prato) {
             
     const botaoanterior = document.querySelector(".prato .selecionado");
 if (botaoanterior !== null) {
@@ -28,20 +29,19 @@ if (botaoanterior !== null) {
 }
     
     
-    const selecionado = document.querySelector(seletor);
-    selecionado.classList.add("selecionado");
+    prato.classList.add("selecionado");
 
     
-  nomecomida = document.querySelector(seletor)
+  nomecomida = prato.querySelector('.nomeprato').innerHTML;
   
-  verificaselecao();
   
-  console.log(nomecomida)
+  
+  verificaselecao()
    
 
 }
 
-function selecionarpedidob(seletor) {
+function selecionarpedidob(bebida) {
     
     const botaoanterior = document.querySelector(".bebida .selecionado");
 if (botaoanterior !== null) {
@@ -49,26 +49,22 @@ if (botaoanterior !== null) {
 }
     
     
-    const selecionado = document.querySelector(seletor);
-    selecionado.classList.add("selecionado");
+    bebida.classList.add("selecionado");
 
-    nomebebida = document.querySelector(seletor)
+    nomebebida = bebida.querySelector('.nomebebida').innerHTML;
 
     verificaselecao();
 }
 
-function selecionarpedidos(seletor) {
+function selecionarpedidos(sobremesa) {
     
     const botaoanterior = document.querySelector(".sobremesa .selecionado");
 if (botaoanterior !== null) {
   botaoanterior.classList.remove("selecionado");
 }
-    
-    
-    const selecionado = document.querySelector(seletor);
-    selecionado.classList.add("selecionado");
+    sobremesa.classList.add("selecionado");
 
-    nomesobrememsa = document.querySelector(seletor)
+    nomesobremesa = sobremesa.querySelector('.nomesobremesa').innerHTML;
 
     verificaselecao();
 }
